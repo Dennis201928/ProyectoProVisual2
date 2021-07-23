@@ -1,0 +1,119 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net5.0\Virtual.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net5.0\Virtual.deps.json" />
+    <Content Include="bin\Debug\net5.0\Virtual.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\net5.0\Virtual.runtimeconfig.json" />
+    <Content Include="obj\Debug\net5.0\Virtual.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\Virtual.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net5.0\ef.dll.config" />
+    <None Include="bin\Debug\net5.0\Escenarios.dll" />
+    <None Include="bin\Debug\net5.0\Escenarios.pdb" />
+    <None Include="bin\Debug\net5.0\Humanizer.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Debug\net5.0\Modelo.dll" />
+    <None Include="bin\Debug\net5.0\Modelo.pdb" />
+    <None Include="bin\Debug\net5.0\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net5.0\Npgsql.dll" />
+    <None Include="bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll" />
+    <None Include="bin\Debug\net5.0\Persistencia.dll" />
+    <None Include="bin\Debug\net5.0\Persistencia.dll.config" />
+    <None Include="bin\Debug\net5.0\Persistencia.pdb" />
+    <None Include="bin\Debug\net5.0\ref\Virtual.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <None Include="bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Debug\net5.0\System.Drawing.Common.dll" />
+    <None Include="bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Debug\net5.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\net5.0\System.Security.Permissions.dll" />
+    <None Include="bin\Debug\net5.0\System.Windows.Extensions.dll" />
+    <None Include="bin\Debug\net5.0\Virtual.dll" />
+    <None Include="bin\Debug\net5.0\Virtual.dll.config" />
+    <None Include="bin\Debug\net5.0\Virtual.exe" />
+    <None Include="bin\Debug\net5.0\Virtual.pdb" />
+    <None Include="obj\Debug\net5.0\apphost.exe" />
+    <None Include="obj\Debug\net5.0\ref\Virtual.dll" />
+    <None Include="obj\Debug\net5.0\Virtual.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net5.0\Virtual.assets.cache" />
+    <None Include="obj\Debug\net5.0\Virtual.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net5.0\Virtual.csproj.CopyComplete" />
+    <None Include="obj\Debug\net5.0\Virtual.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net5.0\Virtual.dll" />
+    <None Include="obj\Debug\net5.0\Virtual.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net5.0\Virtual.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net5.0\Virtual.pdb" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\Virtual.csproj.nuget.g.props" />
+    <None Include="obj\Virtual.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Escenarios\Escenarios.csproj" />
+    <ProjectReference Include="..\Info\ClassInfo.csproj" />
+    <ProjectReference Include="..\Modelo\Modelo.csproj" />
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj" />
+  </ItemGroup>
+
+</Project>

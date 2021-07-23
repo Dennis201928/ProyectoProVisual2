@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net5.0\Modelo.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net5.0\Modelo.deps.json" />
+    <Content Include="obj\Debug\net5.0\Modelo.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Modelo.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net5.0\Modelo.dll" />
+    <None Include="bin\Debug\net5.0\Modelo.pdb" />
+    <None Include="bin\Debug\net5.0\ref\Modelo.dll" />
+    <None Include="obj\Debug\net5.0\Modelo.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net5.0\Modelo.assets.cache" />
+    <None Include="obj\Debug\net5.0\Modelo.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net5.0\Modelo.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net5.0\Modelo.dll" />
+    <None Include="obj\Debug\net5.0\Modelo.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net5.0\Modelo.pdb" />
+    <None Include="obj\Debug\net5.0\ref\Modelo.dll" />
+    <None Include="obj\Modelo.csproj.nuget.g.props" />
+    <None Include="obj\Modelo.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+</Project>

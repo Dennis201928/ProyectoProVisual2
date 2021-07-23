@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net5.0\Escenarios.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net5.0\Escenarios.deps.json" />
+    <Content Include="obj\Debug\net5.0\Escenarios.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Escenarios.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net5.0\Escenarios.dll" />
+    <None Include="bin\Debug\net5.0\Escenarios.pdb" />
+    <None Include="bin\Debug\net5.0\Modelo.dll" />
+    <None Include="bin\Debug\net5.0\Modelo.pdb" />
+    <None Include="bin\Debug\net5.0\ref\Escenarios.dll" />
+    <None Include="obj\Debug\net5.0\Escenarios.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net5.0\Escenarios.assets.cache" />
+    <None Include="obj\Debug\net5.0\Escenarios.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net5.0\Escenarios.csproj.CopyComplete" />
+    <None Include="obj\Debug\net5.0\Escenarios.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net5.0\Escenarios.dll" />
+    <None Include="obj\Debug\net5.0\Escenarios.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net5.0\Escenarios.pdb" />
+    <None Include="obj\Debug\net5.0\ref\Escenarios.dll" />
+    <None Include="obj\Escenarios.csproj.nuget.g.props" />
+    <None Include="obj\Escenarios.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Modelo\Modelo.csproj" />
+  </ItemGroup>
+
+</Project>
