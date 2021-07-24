@@ -11,194 +11,140 @@ namespace Escenarios
 {
     public class Escenario01 : Escenario, IEscenario
     {
+
+        public float CalIva = 0f;
         public Dictionary<ListaTipo, IEnumerable<IDBEntity>> carga()
         {
-            //        //Creación de periodos
-            //        Periodo per2020_PAO2 = new()
-            //        {
-            //            Estado = "Cerrado",
-            //            FechaInicio = new DateTime(2020, 9, 1),
-            //            FechaFin = new DateTime(2021, 3, 1)
-            //        };
-            //        Periodo per2021_PAO1 = new() { Estado = "Cerrado", FechaInicio = new DateTime(2021, 4, 1), FechaFin = new DateTime(2021, 9, 1) };
-            //        Periodo per2021_PAO2 = new() { Estado = "Abierto", FechaInicio = new DateTime(2021, 9, 1), FechaFin = new DateTime(2022, 4, 1) };
-            //        List<Periodo> lstPeriodos = new()
-            //        {
-            //            per2020_PAO2,
-            //            per2021_PAO1,
-            //            per2021_PAO2
-            //        };
+            //Creación de marca
+            marca G220 = new() { nommarca = "G220" };
+            marca Mt500 = new() { nommarca = "Mt500" };
+            marca Rtx5000 = new() { nommarca = "Rtx5000" };
+            marca Otr800 = new() { nommarca = "Otr800" };
+            List<marca> lstMarca = new() { G220, Mt500, Rtx5000, Otr800 };
+            datos.Add(ListaTipo.marca, lstMarca);
 
-            //        datos.Add(ListaTipo.Periodos, lstPeriodos);
+            //Creación de modelos
+            modelo Giulietta = new() { nombre_modelo = "Giulietta", color = "Negro", npuertas = 4 };
+            modelo MiTo = new() { nombre_modelo = "MiTo", color = "Azul", npuertas = 4 };
+            modelo DB9 = new() { nombre_modelo = "DB9", color = "Verde", npuertas = 4 };
+            modelo ABARTH = new() { nombre_modelo = "ABARTH", color = "Morado", npuertas = 4 };
+            List<modelo> lstModelo = new() { Giulietta, MiTo, DB9, ABARTH };
+            datos.Add(ListaTipo.modelo, lstModelo);
 
-            //        //Configuración de los datos de escuela
-            //        Configuracion configuracion = new()
-            //        {
-            //            EscuelaNombre = "Escuela Nacional Quito",
-            //            CreditosMaximo = 24,
-            //            NotaMinima = 7.00f,
-            //            PesoNota1 = 0.35f,
-            //            PesoNota2 = 0.35f,
-            //            PesoNota3 = 0.30f,
-            //            PeriodoVigente = per2021_PAO2
-            //        };
-            //        List<Configuracion> lstConfiguration = new()
-            //        {
-            //            configuracion
-            //        };
-            //        datos.Add(ListaTipo.Configuracion, lstConfiguration);
+            //Creación de carros
+            carro Fiat = new() { modelo= Giulietta,marca= G220 };
+            carro Chevrolet = new() { modelo = MiTo, marca = Mt500 };
+            carro Lexus = new() { modelo = DB9, marca = Rtx5000 };
+            carro Opel = new() { modelo = ABARTH, marca = Otr800 };
+            List<carro> lstCarros = new() { Fiat,Chevrolet,Lexus,Opel };
+            datos.Add(ListaTipo.carro, lstCarros);
 
-            //        //Registro de Estudiantes
-            //        Estudiante Pedro = new() { Nombre = "Pedro Infante" };
-            //        Estudiante Juan = new() { Nombre = "Juan Mora" };
-            //        Estudiante Maria = new() { Nombre = "Maria Brito" };
-            //        List<Estudiante> lstEstudiante = new()
-            //        {
-            //            Pedro,
-            //            Juan,
-            //            Maria
-            //        };
-            //        datos.Add(ListaTipo.Estudiantes, lstEstudiante);
 
-            //        //Registro de carreras
-            //        Carrera carSistemas = new() { Nombre = "Análisis de Sistemas", CostoCredito = 34.50f };
-            //        Carrera carComercio = new() { Nombre = "Comercio Electrónico", CostoCredito = 35.12f };
-            //        List<Carrera> lstCarreras = new()
-            //        {
-            //            carSistemas,
-            //            carComercio
-            //        };
-            //        datos.Add(ListaTipo.Carreras, lstCarreras);
+            //Configuracion
+            Configuracion configuracion = new()
+            {
+                valormin = 15000,
 
-            //        //Registro de materias
-            //        Materia matDisenio = new Materia() { Area = "Diseño Gráfico", Creditos = 3, Nombre = "Diseño Web" };
-            //        Materia matAdminDB = new Materia() { Nombre = "Admin BBDD", Area = "Sistemas", Creditos = 3 };
-            //        Materia matLogProg = new Materia() { Nombre = "Lógica de Prog", Area = "Sistemas", Creditos = 3 };
-            //        Materia matProdDig = new Materia() { Nombre = "Productos Digitales", Area = "Marketing", Creditos = 2 };
-            //        Materia matProgWeb = new Materia() { Nombre = "Programación Web", Area = "Web", Creditos = 3 };
-            //        Materia matELearng = new Materia() { Nombre = "E-Learning", Area = "Marketing", Creditos = 2 };
-            //        Materia matVideoMk = new Materia() { Nombre = "Video Marketing", Area = "Marketing", Creditos = 3 };
-            //        Materia matComuniwe = new Materia() { Nombre = "Comunicacion web", Area = "Web", Creditos = 3 };
 
-            //        List<Materia> lstMaterias = new()
-            //        {
-            //            matAdminDB,
-            //            matDisenio,
-            //            matELearng,
-            //            matLogProg,
-            //            matProdDig,
-            //            matProgWeb,
-            //            matVideoMk,
-            //            matComuniwe
-            //        };
-            //        datos.Add(ListaTipo.Materias, lstMaterias);
-            //        //Registro de mallas
-            //        Malla mallaProDig = new() { Carrera = carComercio, Nivel = "3do", Materia = matProdDig };
-            //        Malla mallaDisenio = new() { Carrera = carComercio, Nivel = "2do", Materia = matDisenio };
-            //        Malla mallaAdminDB = new() { Carrera = carComercio, Nivel = "2do", Materia = matAdminDB };
-            //        Malla mallaLogProg = new() { Carrera = carComercio, Nivel = "3ro", Materia = matLogProg };
-            //        Malla mallaVideoMk = new() { Carrera = carComercio, Nivel = "3ro", Materia = matVideoMk };
-            //        Malla mallaProgWeb = new() { Carrera = carComercio, Nivel = "4ro", Materia = matProgWeb };
-            //        Malla mallaELearng = new() { Carrera = carComercio, Nivel = "4ro", Materia = matELearng };
-            //        List<Malla> lstMallas = new() { mallaAdminDB, mallaDisenio, mallaELearng, mallaLogProg, mallaProgWeb, mallaVideoMk, mallaProDig };
-            //        datos.Add(ListaTipo.Mallas, lstMallas);
+            };
+            List<Configuracion> lstConfig = new() { configuracion };
+            datos.Add(ListaTipo.configuracion, lstConfig);
 
-            //        //Registro de prerequisitos
-            //        Prerequisito preProgWeb_Disenio = new() { Malla = mallaProgWeb, Materia = matDisenio };
-            //        Prerequisito preProgWeb_AdminDB = new() { Malla = mallaProgWeb, Materia = matAdminDB };
-            //        Prerequisito preProgWeb_LogProg = new() { Malla = mallaProgWeb, Materia = matLogProg };
-            //        Prerequisito preELearng_ProdDig = new() { Malla = mallaELearng, Materia = matProdDig };
-            //        Prerequisito preELearng_VideoMk = new() { Malla = mallaELearng, Materia = matVideoMk };
-            //        Prerequisito preProdDig_ComunWeb = new() { Malla = mallaProDig, Materia = matComuniwe };
+            //Creación de genero
+            genero Masculino = new() { nomgenero = "Masculino" };
+            genero Fenenino = new() { nomgenero = "Fenenino" };
 
-            //        List<Prerequisito> lstPrerequisitos = new() { preProgWeb_AdminDB, preProgWeb_Disenio, preProgWeb_LogProg, preELearng_ProdDig, preELearng_VideoMk, preProdDig_ComunWeb };
-            //        datos.Add(ListaTipo.Prerequisitos, lstPrerequisitos);
-            //        //Registro de las JORNADAS
+            List<genero> lstgenero = new() { Masculino, Fenenino };
+            datos.Add(ListaTipo.genero, lstgenero);
 
-            //        Curso N2D_2020PAO2_Diseño = new Curso()
-            //        {
-            //            carrera = carComercio,
-            //            Periodo = per2020_PAO2,
-            //            Materia = matDisenio,
-            //            FechaInicio = new DateTime(2020, 5, 1),
-            //            FechaFin = new DateTime(2020, 6, 30),
-            //            Jornada = "Diurna",
-            //            Nombre = "Nivel 2 Diurna de Diseño Web"
-            //        };
-            //        Curso N2D_2020PAO2_AdminDB = new Curso()
-            //        {
-            //            carrera = carComercio,
-            //            Periodo = per2020_PAO2,
-            //            Materia = matAdminDB,
-            //            FechaInicio = new DateTime(2020, 5, 1),
-            //            FechaFin = new DateTime(2020, 6, 15),
-            //            Jornada = "Diurna",
-            //            Nombre = "Nivel 2 Diurna de Administracion DB"
-            //        };
-            //        Curso N3D_2021PAO1_LogProg = new Curso()
-            //        {
-            //            carrera = carComercio,
-            //            Periodo = per2021_PAO1,
-            //            Materia = matLogProg,
-            //            FechaInicio = new DateTime(2020, 11, 1),
-            //            FechaFin = new DateTime(2021, 1, 15),
-            //            Jornada = "Diurna",
-            //            Nombre = "Nivel 3 Diurna de Logica de programacion"
-            //        };
-            //        Curso N3D_2021PAO1_ProDig = new Curso()
-            //        {
-            //            carrera = carComercio,
-            //            Periodo = per2021_PAO1,
-            //            Materia = matProdDig,
-            //            FechaInicio = new DateTime(2020, 2, 18),
-            //            FechaFin = new DateTime(2021, 3, 25),
-            //            Jornada = "Diurna",
-            //            Nombre = "Nivel 3 Diurna de Productos Digitales"
-            //        };
-            //        Curso N3D_2021PAO1_VideoMK = new Curso()
-            //        {
-            //            carrera = carComercio,
-            //            Periodo = per2021_PAO1,
-            //            Materia = matVideoMk,
-            //            FechaInicio = new DateTime(2020, 4, 7),
-            //            FechaFin = new DateTime(2021, 6, 8),
-            //            Jornada = "Diurna",
-            //            Nombre = "Nivel 3 Diurna de Video Marketing"
-            //        };
-            //        Curso N4D_2021PAO2_ProgWeb = new Curso()
-            //        {
-            //            carrera = carComercio,
-            //            Periodo = per2021_PAO2,
-            //            Materia = matProgWeb,
-            //            FechaInicio = new DateTime(2020, 11, 1),
-            //            FechaFin = new DateTime(2021, 12, 21),
-            //            Jornada = "Diurna",
-            //            Nombre = "Nivel 4 Diurna de Programacion Web"
-            //        };
-            //        Curso N4D_2021PAO2_Elearnign = new Curso()
-            //        {
-            //            carrera = carComercio,
-            //            Periodo = per2021_PAO2,
-            //            Materia = matELearng,
-            //            FechaInicio = new DateTime(2020, 1, 4),
-            //            FechaFin = new DateTime(2021, 2, 27),
-            //            Jornada = "Diurna",
-            //            Nombre = "Nivel 4 Diurna de E-Learning"
-            //        };
-            //        List<Curso> lstCursos = new List<Curso>()
-            //        {
-            //            //nivel 2
-            //            N2D_2020PAO2_AdminDB, N2D_2020PAO2_Diseño,
-            //            //nivel 3
-            //            N3D_2021PAO1_LogProg, N3D_2021PAO1_ProDig, N3D_2021PAO1_VideoMK,
-            //            //nivel 4
-            //            N4D_2021PAO2_Elearnign, N4D_2021PAO2_ProgWeb
-            //        };
-            //        datos.Add(ListaTipo.Cursos, lstCursos);
 
-            //        //Retorno el diccionario
-            //        return datos;
+            //Creación de cliente
+            cliente Alverto = new() { nombre= "Alverto", edad = 35 , genero= Masculino };
+            cliente Melissa = new() { nombre = "Melissa", edad = 45, genero = Fenenino };
+            cliente Karen = new() { nombre = "Jose", edad = 25, genero = Fenenino };
+            cliente Josue = new() { nombre = "Josue", edad = 42, genero = Masculino };
+            List<cliente> lstClientes = new() { Alverto, Melissa, Karen, Josue };
+            datos.Add(ListaTipo.cliente, lstClientes);
+
+         
+
+            //Creación de tipopago
+            tipopago Efectivo = new() { nombreTipoPago = "Efectivo" };
+            tipopago Cheque = new() { nombreTipoPago = "Cheque" };
+            List<tipopago> lsttipopago = new() { Efectivo, Cheque };
+            datos.Add(ListaTipo.tipopago, lsttipopago);
+
+
+            //Creación de iva
+
+            //iva im_sali_divisas = new() { im_sali_divisas = 0.5f };
+            //iva im_val_agregado = new() { im_val_agregado = 0.12f };
+            //iva arancel = new() { arancel = 0.40f };
+            //iva imrodaje = new() { imrodaje = 5.00f };
+            //iva im_sali_divisas_isd = new() { im_sali_divisas_isd = 5.0f };
+
+            //List<iva> lstiva = new() { im_sali_divisas, im_val_agregado, arancel, imrodaje, im_sali_divisas_isd };
+            //datos.Add(ListaTipo.iva, lstiva);
+
+
+
+            iva sumaiva = new()
+            {
+                im_sali_divisas = 0.5f,
+                im_val_agregado = 0.12f,
+                arancel = 0.40f,
+                imrodaje = 5.00f,
+                im_sali_divisas_isd = 5.0f,
+            };
+
+            List<iva> lstIva = new() { sumaiva };
+            datos.Add(ListaTipo.iva, lstIva);
+
+
+            //Creación de venta
+            venta venta1 = new() {
+                cliente = Alverto,
+                carro = Fiat,
+                tipopago = Cheque,
+                precio = 4200,
+                iva = sumaiva,
+                total = 4200 + sumaiva.TotalIva
+
+            };
+            venta venta2 = new() {
+                cliente = Melissa,
+                carro = Chevrolet,
+                tipopago=Efectivo,
+                precio = 1200,
+                iva = sumaiva,
+                total = 1200 + sumaiva.TotalIva
+
+            };
+            venta venta3 = new() {
+                cliente = Karen,
+                carro = Lexus,
+                tipopago = Cheque,
+                precio = 1400,
+                iva = sumaiva,
+                total = 1400 + sumaiva.TotalIva
+
+            };
+            venta venta4 = new() {
+                cliente = Josue,
+                carro = Opel,
+                tipopago = Efectivo,
+                precio = 3500,
+                iva = sumaiva,
+                total = 3500 + sumaiva.TotalIva
+
+            };
+            List<venta> lsventa = new() { venta1,venta2,venta3,venta4 };
+            datos.Add(ListaTipo.venta, lsventa);
+
+             return datos;
         }
+
+       
     }
 }
 

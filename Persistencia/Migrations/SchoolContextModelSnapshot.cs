@@ -47,8 +47,8 @@ namespace Persistencia.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<string>("edad")
-                        .HasColumnType("text");
+                    b.Property<int>("edad")
+                        .HasColumnType("integer");
 
                     b.Property<int>("generoId")
                         .HasColumnType("integer");
@@ -70,8 +70,8 @@ namespace Persistencia.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<int>("nomgenero")
-                        .HasColumnType("integer");
+                    b.Property<string>("nomgenero")
+                        .HasColumnType("text");
 
                     b.HasKey("generoId");
 
@@ -85,20 +85,23 @@ namespace Persistencia.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<int>("arancel")
-                        .HasColumnType("integer");
+                    b.Property<float>("TotalIva")
+                        .HasColumnType("real");
 
-                    b.Property<int>("im_sali_divisas")
-                        .HasColumnType("integer");
+                    b.Property<float>("arancel")
+                        .HasColumnType("real");
 
-                    b.Property<int>("im_sali_divisas_isd")
-                        .HasColumnType("integer");
+                    b.Property<float>("im_sali_divisas")
+                        .HasColumnType("real");
 
-                    b.Property<int>("im_val_agregado")
-                        .HasColumnType("integer");
+                    b.Property<float>("im_sali_divisas_isd")
+                        .HasColumnType("real");
 
-                    b.Property<int>("imrodaje")
-                        .HasColumnType("integer");
+                    b.Property<float>("im_val_agregado")
+                        .HasColumnType("real");
+
+                    b.Property<float>("imrodaje")
+                        .HasColumnType("real");
 
                     b.HasKey("ivaId");
 
@@ -148,7 +151,7 @@ namespace Persistencia.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<string>("nombre")
+                    b.Property<string>("nombreTipoPago")
                         .HasColumnType("text");
 
                     b.HasKey("tipopagoId");
@@ -178,8 +181,8 @@ namespace Persistencia.Migrations
                     b.Property<int>("tipopagoId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("total")
-                        .HasColumnType("integer");
+                    b.Property<float>("total")
+                        .HasColumnType("real");
 
                     b.HasKey("ventaId");
 

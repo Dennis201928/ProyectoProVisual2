@@ -24,7 +24,7 @@ namespace Modelo.Escuela
         public iva iva { get; set; }
         public int ivaId { get; set; }
 
-        public int total { get; set; }
+        public float total { get; set; }
 
 
 

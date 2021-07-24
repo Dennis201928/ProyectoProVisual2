@@ -11,9 +11,7 @@ namespace Modelo.Escuela
         public int modeloId { get; set; }
         public string nombre_modelo { get; set; }
 
-        public List<carro> carros { get; set; }
-
-       
+        public List<carro> carros { get; set; }    
 
 
         public string color { get; set; }

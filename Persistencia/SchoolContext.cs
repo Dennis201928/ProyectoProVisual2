@@ -20,9 +20,7 @@ namespace Virtual
         public DbSet<modelo> modelos { get; set; }
         public DbSet<tipopago> tipopagos { get; set; }
         public DbSet<venta> ventas { get; set; }
-        //public DbSet<Profesor> profesors { get; set; }
-
-        //public DbSet<Area> areas { get; set; }
+     
 
         // Constructor vacio
         public SchoolContext() : base()

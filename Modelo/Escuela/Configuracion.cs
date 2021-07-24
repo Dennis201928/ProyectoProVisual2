@@ -9,7 +9,7 @@ namespace Modelo.Escuela
 
         public int configId { get; set; }
         public int valormin { get; set; }
-        public int valormax { get; set; }
+        //public int valormax { get; set; }
     }
 }
 

@@ -18,14 +18,14 @@ namespace Virtual
                 db.Database.EnsureDeleted();
                 db.Database.EnsureCreated();
                 //Insertamos los datos
-                //db.configuracions.AddRange((List<Configuracion>) datos[ListaTipo.Configuracion]);
-                //db.estudiantes.AddRange((List<Estudiante>)datos[ListaTipo.Estudiantes]);
-                //db.periodos.AddRange((List<Periodo>)datos[ListaTipo.Periodos]);
-                //db.carreras.AddRange((List<Carrera>)datos[ListaTipo.Carreras]);
-                //db.materias.AddRange((List<Materia>)datos[ListaTipo.Materias]);
-                //db.mallas.AddRange((List<Malla>)datos[ListaTipo.Mallas]);
-                //db.prerequisitos.AddRange((List<Prerequisito>)datos[ListaTipo.Prerequisitos]);
-                //db.cursos.AddRange((List<Curso>)datos[ListaTipo.Cursos]);
+                db.carros.AddRange((List<carro>)datos[ListaTipo.carro]);
+                db.Clientes.AddRange((List<cliente>)datos[ListaTipo.cliente]);
+                db.generos.AddRange((List<genero>)datos[ListaTipo.genero]);
+                db.ivas.AddRange((List<iva>)datos[ListaTipo.iva]);
+                db.marcas.AddRange((List<marca>)datos[ListaTipo.marca]);
+                db.modelos.AddRange((List<modelo>)datos[ListaTipo.modelo]);
+                db.tipopagos.AddRange((List<tipopago>)datos[ListaTipo.tipopago]);
+                db.ventas.AddRange((List<venta>)datos[ListaTipo.venta]);
                 //Genera la persistencia
                 db.SaveChanges();
             }

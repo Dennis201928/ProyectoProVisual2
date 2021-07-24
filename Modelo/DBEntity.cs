@@ -9,7 +9,7 @@ namespace Modelo
     public class DBEntity
     {
         public enum ListaTipo {
-            Periodos, Configuracion, Carreras, Estudiantes, Materias, Mallas, Prerequisitos, Cursos, Profesores, Areas
+            carro,modelo,cliente, configuracion, genero, tipopago, iva, marca, venta
         };
     }
 }

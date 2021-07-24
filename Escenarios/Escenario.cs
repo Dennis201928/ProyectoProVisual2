@@ -7,8 +7,8 @@ namespace Escenarios
     {
         public enum ListaTipo
         {
-            Periodos, Configuracion, Carreras, Estudiantes, Materias, Mallas, Prerequisitos, Cursos, Jornadas
-        };
+            carro,modelo,cliente, configuracion, genero, tipopago, iva, marca, venta
+        }
         public Dictionary<ListaTipo, IEnumerable<IDBEntity>> datos;
 
         public Escenario()

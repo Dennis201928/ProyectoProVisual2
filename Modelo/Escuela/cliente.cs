@@ -10,12 +10,12 @@ namespace Modelo.Escuela
     {
         public int clienteId { get; set; }
         public string nombre { get; set; }
-        public string edad { get; set; }
+        public int edad { get; set; }
 
         public genero genero { get; set; }
         public int generoId { get; set; }
 
-
+        //RELACION CON ventas
         public List<venta> ventas { get; set; }
 
     }

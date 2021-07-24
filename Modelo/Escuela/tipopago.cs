@@ -10,7 +10,7 @@ namespace Modelo.Escuela
     {
 
         public int tipopagoId { get; set; }
-        public string nombre { get; set; }
+        public string nombreTipoPago { get; set; }
 
         public List<venta> ventas { get; set; }
     }

@@ -13,7 +13,7 @@ namespace Persistencia.Migrations
                 {
                     generoId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    nomgenero = table.Column<int>(type: "integer", nullable: false)
+                    nomgenero = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -26,11 +26,12 @@ namespace Persistencia.Migrations
                 {
                     ivaId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    im_sali_divisas = table.Column<int>(type: "integer", nullable: false),
-                    im_val_agregado = table.Column<int>(type: "integer", nullable: false),
-                    arancel = table.Column<int>(type: "integer", nullable: false),
-                    imrodaje = table.Column<int>(type: "integer", nullable: false),
-                    im_sali_divisas_isd = table.Column<int>(type: "integer", nullable: false)
+                    im_sali_divisas = table.Column<float>(type: "real", nullable: false),
+                    im_val_agregado = table.Column<float>(type: "real", nullable: false),
+                    arancel = table.Column<float>(type: "real", nullable: false),
+                    imrodaje = table.Column<float>(type: "real", nullable: false),
+                    im_sali_divisas_isd = table.Column<float>(type: "real", nullable: false),
+                    TotalIva = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -71,7 +72,7 @@ namespace Persistencia.Migrations
                 {
                     tipopagoId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    nombre = table.Column<string>(type: "text", nullable: true)
+                    nombreTipoPago = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -85,7 +86,7 @@ namespace Persistencia.Migrations
                     clienteId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     nombre = table.Column<string>(type: "text", nullable: true),
-                    edad = table.Column<string>(type: "text", nullable: true),
+                    edad = table.Column<int>(type: "integer", nullable: false),
                     generoId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
@@ -136,7 +137,7 @@ namespace Persistencia.Migrations
                     tipopagoId = table.Column<int>(type: "integer", nullable: false),
                     precio = table.Column<int>(type: "integer", nullable: false),
                     ivaId = table.Column<int>(type: "integer", nullable: false),
-                    total = table.Column<int>(type: "integer", nullable: false)
+                    total = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
                 {

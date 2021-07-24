@@ -9,7 +9,7 @@ namespace Modelo.Escuela
     public class genero : IDBEntity
     {
         public int generoId { get; set; }
-        public int nomgenero { get; set; }
+        public string nomgenero { get; set; }
 
         public List<cliente> clientes { get; set; }
 

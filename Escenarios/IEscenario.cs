@@ -10,6 +10,6 @@ namespace Escenarios
 {
     public interface IEscenario
     {
-        public Dictionary<ListaTipo, IEnumerable<IDBEntity>> Carga();
+        public Dictionary<ListaTipo, IEnumerable<IDBEntity>> carga();
     }
 }
