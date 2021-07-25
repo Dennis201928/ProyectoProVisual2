@@ -27,6 +27,7 @@ namespace Virtual
                 db.modelos.AddRange((List<modelo>)datos[ListaTipo.modelo]);
                 db.tipopagos.AddRange((List<tipopago>)datos[ListaTipo.tipopago]);
                 db.ventas.AddRange((List<venta>)datos[ListaTipo.venta]);
+                //db.configuracions.AddRange((List<Configuracion>)datos[ListaTipo.configuracion]);
 
                 Console.WriteLine("GENERACION ");
                 

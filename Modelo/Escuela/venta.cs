@@ -30,8 +30,5 @@ namespace Modelo.Escuela
         public String Estado { get; set; }
 
 
-
-
-
     }
 }

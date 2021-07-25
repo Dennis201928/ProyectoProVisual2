@@ -20,7 +20,7 @@ namespace Virtual
         public DbSet<modelo> modelos { get; set; }
         public DbSet<tipopago> tipopagos { get; set; }
         public DbSet<venta> ventas { get; set; }
-     
+        //public DbSet<Configuracion> configuracions { get; set; }
 
         // Constructor vacio
         public SchoolContext() : base()
@@ -59,6 +59,11 @@ namespace Virtual
         ///----------------Tablas ya creadas---------------------------------////
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<carro>()
+               .HasOne(mat => mat.marca)
+               .WithMany(car => car.carros)
+               .HasForeignKey(mat => mat.marcaId);
+
             modelBuilder.Entity<carro>()
                .HasOne(mat => mat.marca)
                .WithMany(car => car.carros)
