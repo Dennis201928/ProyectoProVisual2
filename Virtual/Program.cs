@@ -19,6 +19,8 @@ namespace Virtual
             EscenarioControl.Grabar(Escenario);
 
 
+            //COMPLETAR
+
             //var datosMatrículas = new DatosMatrículas();
             //datosMatrículas.Generar();
             //// Regla del negocio: validación de prerequisitos
