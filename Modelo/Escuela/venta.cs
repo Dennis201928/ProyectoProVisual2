@@ -23,8 +23,11 @@ namespace Modelo.Escuela
         public int precio { get; set; }
         public iva iva { get; set; }
         public int ivaId { get; set; }
+     
 
         public float total { get; set; }
+
+        public String Estado { get; set; }
 
 
 

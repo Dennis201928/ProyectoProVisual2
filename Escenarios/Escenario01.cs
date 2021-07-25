@@ -108,7 +108,9 @@ namespace Escenarios
                 tipopago = Cheque,
                 precio = 4200,
                 iva = sumaiva,
-                total = 4200 + sumaiva.TotalIva
+                total = 4200 + sumaiva.TotalIva,
+                Estado= "Deviendo"
+
 
             };
             venta venta2 = new() {
@@ -117,7 +119,8 @@ namespace Escenarios
                 tipopago=Efectivo,
                 precio = 1200,
                 iva = sumaiva,
-                total = 1200 + sumaiva.TotalIva
+                total = 1200 + sumaiva.TotalIva,
+                Estado = "Pagado"
 
             };
             venta venta3 = new() {
@@ -126,7 +129,8 @@ namespace Escenarios
                 tipopago = Cheque,
                 precio = 1400,
                 iva = sumaiva,
-                total = 1400 + sumaiva.TotalIva
+                total = 1400 + sumaiva.TotalIva,
+                Estado = "Deviendo"
 
             };
             venta venta4 = new() {
@@ -135,7 +139,8 @@ namespace Escenarios
                 tipopago = Efectivo,
                 precio = 3500,
                 iva = sumaiva,
-                total = 3500 + sumaiva.TotalIva
+                total = 3500 + sumaiva.TotalIva,
+                Estado = "Pagado"
 
             };
             List<venta> lsventa = new() { venta1,venta2,venta3,venta4 };

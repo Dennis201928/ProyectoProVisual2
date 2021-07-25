@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Escenarios;
+using Microsoft.EntityFrameworkCore;
 using Modelo.Escuela;
 using static Escenarios.Escenario;
 
@@ -26,9 +27,23 @@ namespace Virtual
                 db.modelos.AddRange((List<modelo>)datos[ListaTipo.modelo]);
                 db.tipopagos.AddRange((List<tipopago>)datos[ListaTipo.tipopago]);
                 db.ventas.AddRange((List<venta>)datos[ListaTipo.venta]);
+
+                Console.WriteLine("GENERACION ");
+                
                 //Genera la persistencia
-                db.SaveChanges();
+
+                try
+                {
+                    db.SaveChanges();
+                }
+                catch (DbUpdateConcurrencyException exception)
+                {
+                    Exception ex = new Exception("Conficto de concurrencia", exception);
+                    throw ex;
+                }
+               
             }
         }
+       
     }
 }

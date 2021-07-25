@@ -19,23 +19,29 @@ namespace Virtual
             EscenarioControl.Grabar(Escenario);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
+            //var datosMatrículas = new DatosMatrículas();
+            //datosMatrículas.Generar();
+            //// Regla del negocio: validación de prerequisitos
+            //using (var db = new SchoolContext())
+            //{
+            //    var listaMatriculas = db.matriculas
+            //        .Include(matr => matr.Estudiante)
+            //        .Where(matr => matr.Estado == "Pendiente")
+            //        .ToList();
+            //    foreach (var matricula in listaMatriculas)
+            //    {
+            //        Console.WriteLine(
+            //            String.Format(
+            //                "  - {0} Matricula Id: {1} Estado: {2}",
+            //                matricula.Estudiante.Nombre,
+            //                matricula.MatriculaId,
+            //                MatriculaProc.MatriculaAprobada(matricula.MatriculaId) ? "Aprobada" : "Rechazada"
+            //            )
+            //        );
+            //    }
+            //}
         }
+
 
     }
 }
