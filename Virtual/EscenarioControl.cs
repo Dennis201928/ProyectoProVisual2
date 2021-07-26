@@ -30,11 +30,12 @@ namespace Virtual
                 //db.configuracions.AddRange((List<Configuracion>)datos[ListaTipo.configuracion]);
 
                 Console.WriteLine("*****GENERADO CON EXITO*****");
-                
-                //Genera la persistencia
 
+                //Genera la persistencia
+                
                 try
                 {
+
                     db.SaveChanges();
                 }
                 catch (DbUpdateConcurrencyException exception)
