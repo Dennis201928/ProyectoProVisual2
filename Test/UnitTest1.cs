@@ -10,7 +10,7 @@ namespace Test
         //[Theory]
         //[InlineData(8.55, 8.34, 8.74, true)]
 
-        
+
 
 
         //public void Test2(float n1, float n2, float n3, bool resultadoEsperado)
