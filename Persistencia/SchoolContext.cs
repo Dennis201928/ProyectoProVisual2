@@ -59,10 +59,10 @@ namespace Virtual
         ///----------------Tablas ya creadas---------------------------------////
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<carro>()
-               .HasOne(mat => mat.marca)
-               .WithMany(car => car.carros)
-               .HasForeignKey(mat => mat.marcaId);
+            //modelBuilder.Entity<carro>()
+            //   .HasOne(mat => mat.marca)
+            //   .WithMany(car => car.carros)
+            //   .HasForeignKey(mat => mat.marcaId);
 
             modelBuilder.Entity<carro>()
                .HasOne(mat => mat.marca)

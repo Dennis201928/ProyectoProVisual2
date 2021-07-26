@@ -19,14 +19,16 @@ namespace ClassInfo
                           "CarroId: {2} \n" +
                           "Tipo PagoId: {3} \n" +
                           "IvaId: {4} \n" +
-                          "Total: {5} \n" ,
+                          "Total: {5} \n" +
+                          "Estado: {6} \n" ,
 
                 config.ventaId,
                 config.clienteId,
                   config.carroId,
                 config.tipopagoId,
                   config.ivaId,
-                config.total
+                config.total,
+                config.Estado
 
 
                 );

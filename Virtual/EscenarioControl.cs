@@ -29,7 +29,7 @@ namespace Virtual
                 db.ventas.AddRange((List<venta>)datos[ListaTipo.venta]);
                 //db.configuracions.AddRange((List<Configuracion>)datos[ListaTipo.configuracion]);
 
-                Console.WriteLine("GENERACION ");
+                Console.WriteLine("*****GENERADO CON EXITO*****");
                 
                 //Genera la persistencia
 
